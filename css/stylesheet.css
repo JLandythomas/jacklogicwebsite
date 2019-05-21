@@ -1,0 +1,127 @@
+main.container{
+    margin-top: 3rem;
+}
+
+
+body {
+    background-image: url("../img/4k-wallpaper-architecture-background-1308624.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.card {
+    -webkit-box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 23px -6px rgba(0,0,0,0.75);
+    min-height: 355px;
+    min-width: 355px
+
+}
+
+.card p{
+    color: #000;
+}
+
+
+.container button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 0.5em 1em;
+    outline: none;
+    border: none;
+
+}
+
+.container button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #E89911;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background-color: #fff !important;
+    color: #fff;
+}
+
+.container button:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+}
+
+.navbar-dark .navbar-nav li a
+{
+    color: #E89911;
+    margin-right: 20px;
+}
+
+.navbar-dark .navbar-nav li a:hover, .navbar-nav .nav-link.active {
+    color: #E89911 !important;
+}
+
+.container .btn-outline-primary {
+    color: #E89911;
+    border: 1px solid #E89911;
+}
+
+.content{
+    background-color: #fff;
+    border-radius: 0px 40px 0px 40px;
+    opacity: 0.9;
+    padding-bottom: 20px;
+}
+
+.contact{
+    padding: 4%;
+    height: 400px;
+}
+
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar-dark .navbar-brand, span {
+    color: #E89911;
+}
